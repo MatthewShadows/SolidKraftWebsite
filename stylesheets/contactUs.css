@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body {
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+.container-fluid{
+    padding:0;
+}
+.row{
+    margin:0;
+}
+.nav-link{
+    color:black;
+}
+.nav-link:hover{
+    color:#DD2424;
+}
+.asideLogo{
+    transform: rotate(-90deg);
+    position: fixed;
+    width: 100px;
+    margin-bottom: 3em;
+}
+.header{
+    padding: 1.3em 0;
+}
+.col-logo{
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    z-index: 10;
+}
+.asideForm{
+    background-color: black;
+    display: grid;
+    align-content: start;
+    padding: 4em;
+    margin-left: 3em;
+    margin-right: 3em;
+    height: 100%;
+}
+.asideForm h3{
+    color: white;
+    font-size: 30px;
+    padding: 2em 1em;
+    padding-top: 3em;
+
+}
+.redLine img{
+    width: 58%;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+}
+form{
+    display: grid;
+}
+.form{
+    margin-top: 3em;
+}
+.form h2{
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+}
+.form-group{
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+.form-control{
+    border-bottom: solid 1px;
+    padding: 0;
+}
+label{
+    margin-bottom: 0;
+}
+
+.short-input{
+    width: 400px;
+}
+.large-input{
+    width: 630px;
+}
+
+.btnForm{
+    justify-self: end;
+    margin-right: 10em;
+    margin-bottom: 6em;
+}
+.btnForm a{
+    border: solid black 1px;
+    border-radius: 0;
+    color: black;
+    font-size: 20px;
+    padding: 0.3em 1.1em;
+    margin-top: 3em;
+}
+.btnForm a img{
+    margin-left: 1em;
+}
+.btnForm a:hover{
+    background-color: #DD2424;
+    color: white;
+    text-decoration: none;
+}
+.btnForm .btn:hover img{
+    filter: invert(95%) sepia(7%) saturate(7458%) hue-rotate(185deg) brightness(220%) contrast(111%);
+}
+
+footer{
+    background-color: black;
+    margin-top: 0em;
+}
+.half-circle-footer{
+    width: 12rem;
+    height: 6rem;
+    flex:none;
+    background-color: white;
+    border-radius: 10rem 10rem 0 0;
+    transform: rotate(-180deg);
+    margin-bottom: 3em;
+}
+.footerLogo{
+    display: grid;
+    place-items: center;
+}
+.footerImgLogo{
+    width: 320px;
+    margin-left: 3em;
+    
+}
+.footerMenu{
+    display: grid;
+    justify-content: center;
+}
+.footerMenu ul{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 13em;
+}
+.footerNav {
+    color: white;
+    display: flex;
+    font-size: 24px;
+    margin-top: 1em;
+
+}
+.footerButtons{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10em;
+}
+.footerButtons button{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-bottom: solid white;
+    font-size: 20px;
+    padding-bottom: 0.7em;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+.footerButtons button:hover{
+    color: #DD2424;
+    border-bottom: solid #DD2424;
+    cursor: pointer;
+}
+.copyright{
+    margin-left: 9em;
+}
+.copyright h6{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
