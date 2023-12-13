@@ -22,10 +22,12 @@ body {
     transform: rotate(-90deg);
     position: fixed;
     width: 100px;
-    margin-bottom: 3em;
+    
 }
 .header{
     padding: 1.3em 0;
+    
+
 }
 h1{
     font-size: 62px;
@@ -37,7 +39,7 @@ h1{
 .col-logo{
     display: grid;
     align-items: center;
-    justify-content: end;
+    
 }
 .buttonWorkWithUs{
     display: grid;
@@ -105,6 +107,10 @@ h5{
 }
 .animation{
     padding-top: 2em;
+}
+lottie-player{
+    width: 500px;
+    height: 500px;
 }
 .col-xl-6 h2{
     font-size: 36px;
@@ -181,4 +187,254 @@ margin-left: 13em;
     font-size: 20px;
     margin-bottom: 1em;
     margin-top: 3em;
+}
+
+.header2{
+    display: none;
+    --img1: scale(1);
+    --img2: scale(0);
+}
+.header2:has( .dropdown:target ){
+    --img1: scale(0);
+    --img2: scale(1);
+    --clip:inset(0 0 0 0);
+
+}
+.dropdown{
+    position: absolute;
+    background-color: #000;
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+    z-index: 10;
+    display: grid;
+    align-content:center ;
+    gap: 1rem;
+
+    overflow-y: auto;
+
+
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s; 
+}
+.nav__menu{
+    grid-area: img;
+    position: relative;
+    z-index: 10;
+
+    transform: var(--img1);
+}
+.nav__menu--second{
+    transform: var(--img2);
+    z-index: 11;
+}
+.dropdown span {
+    color: white;
+}
+.dropdown__link{
+    color: rgb(184, 187, 191);
+    padding: 1em .7em;
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    position: relative;
+    background-color: var(--bg, transparent);
+    border-radius: 6px;
+}
+
+@media(max-width:1190px){
+    .footerImgLogo{
+        margin-left: 0;
+    }
+    .footerMenu ul{
+        margin-left: 0;
+    }
+    .nav-item{
+        display: grid;
+    }
+    .footerNav{
+        text-align: center;
+        justify-self: center;
+    }
+    .footerMenu{
+        margin-top: 50px;
+    }
+    .footerButtons{
+        margin-top: 30px;
+    }
+    .footerButtons button{
+        color: black;
+        border-radius: 15px;
+        background-color: white;
+        padding: 0.3em 0;
+        margin-bottom: 1.8em;
+    }
+    .copyright{
+        margin-left: 12em;
+    }
+    .col-xl-6 h2{
+        padding-right: 1em;
+    }
+}
+@media(max-width:950px){
+    .col-xl-6 h2{
+        padding-right: 0;
+        padding-left: 2em;
+        font-size: 36px;
+    }
+}
+
+@media(max-width:769px){
+
+    .header{
+        display: none;
+    }
+    .header2{
+        display: block;
+    }
+    .nav__icon{
+        width: 25px;
+        position: absolute;
+        right: 30px;
+        top:30px;
+
+    }
+    .nav__icon2{
+        width: 35px;
+        position: absolute;
+        right: 30px;
+        top:30px;
+        z-index: 12;
+    }
+    .nav__menu{
+        display: grid;
+    }
+    .dropdown__list{
+        list-style:none ;
+    }
+
+
+    .footerImgLogo{
+        margin-left: 0;
+    }
+    .footerMenu ul{
+        margin-left: 0;
+    }
+    .nav-item{
+        display: grid;
+    }
+    .footerNav{
+        text-align: center;
+        justify-self: center;
+    }
+    .footerMenu{
+        margin-top: 50px;
+    }
+    .footerButtons{
+        margin-top: 30px;
+        padding: 2em;
+    }
+    .footerButtons button{
+        color: black;
+        border-radius: 15px;
+        background-color: white;
+        padding: 0.3em 0;
+        margin-bottom: 1.8em;
+    }
+    .copyright{
+        margin-left: 12em;
+    }
+
+
+    .asideLogo{
+        width: 200px;
+        top:2.8em;
+        right: 33%;
+        position: absolute;
+        transform: rotate(0deg);
+    }
+
+
+    h1{
+        font-size: 50px;
+        padding: 1em 1.2em;
+    }
+    h4{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .buttonWorkWithUs{
+        justify-content: center;
+        padding-top:2em ;
+    }
+    .landingGradient{
+        height: 50%;
+        top: 670px;
+    }
+    .howSolidkraftInnovates{
+        margin-top: 20em;
+    }
+    .mainSolidkraft{
+        padding-left: 4em;
+    }
+    h5{
+        font-size: 24px;
+    }
+    .howSolidkraftInnovates .col-xl-5 p{
+        font-size: 20px;
+        padding-right: 3em;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .half-circle{
+        margin-right: 14em;
+    }
+    .col-xl-6 {
+        padding-right: 0;
+    }
+    .placardImage{
+        margin-left: 9em;
+        
+    }
+    lottie-player{
+        width: 80%;
+        height: 400px;
+        margin-left: 4em;
+    }
+    .col-xl-6 h2{
+        margin-top: 0;
+        padding-top: 1em;
+        padding: 2em;
+        text-align: center;
+        margin-left: 0;
+    }
+    footer{
+        margin-top: 7em;
+    }
+    .mainSolidkraft{margin-top: 7em;}
+}
+@media(max-width:500px){
+    .howSolidkraftInnovates .col-xl-5 p{
+        padding-right: 0;
+    }
+    .mainSolidkraft{
+        margin-left: 0;
+        padding-left: 1em;
+    }
+    .placardImage{
+        margin-left: 2em;
+    }
+    .copyright{
+        margin-left: 6em;
+    }
+    h1{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
